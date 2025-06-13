@@ -84,10 +84,6 @@ const Navbar = () => {
         </div>
 
 
-
-
-
-
         {/* Add toggleMenu button for mobile here if needed */}
       </nav>
     </header>
