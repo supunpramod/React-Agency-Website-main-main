@@ -38,8 +38,9 @@ const Navbar = () => {
   ];
 
   return (
-    <header className={`w-full fixed top-0 left-0 right-0 z-50 ${isSticky ? "bg-white shadow-md" : "bg-red-50 md:bg-transparent"}`}>
-      <nav className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <header className ='w-full bg-white md:bg-transport fixed top-0 left-0 right-0' >
+      <nav className={'py-4 lg:px-14 px-4 $(isSticky ? "sticky top-0 left-0 right-0 border-b bg-white duration-300": ""}'}>
+        <div className="flex justify-between items-center text-base gap-8">
         <a href="#" className="text-2xl font-semibold flex items-center space-x-3">
           <img src={logo} alt="Logo" className="w-10 inline-block" />
           <span className="text-[#263238]">NEXCENT</span>
@@ -77,6 +78,7 @@ const Navbar = () => {
             </button>
 
  
+        </div>
         </div>
 
 
