@@ -71,7 +71,9 @@ const Navbar = () => {
 
         {/* menu button for mobile device           */}
         <div className="md:hidden">
-            <button className=" text-neutralDGrey focus:outline-none focus:text-gray-500">
+            <button
+            onClick={toggleMenu}
+             className=" text-neutralDGrey focus:outline-none focus:text-gray-500">
                 {
                     isMenuOpen ? (<FaXmark className="h-6 w-6 "/>) : (<FaBars className="h-6 w-6 " />)
                 }
