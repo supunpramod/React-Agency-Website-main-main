@@ -8,6 +8,7 @@ import Services from './components/Services.jsx'
 import About from './components/About.jsx'
 import Product from './components/Product.jsx'
 import Blog from './components/Blog.jsx'
+import Newsletter from './components/Newsletter.jsx'
 
 
 
@@ -25,6 +26,7 @@ function App() {
     <About/>
     <Product/>
     <Blog/>
+    <Newsletter/>
    
     </>
   )
