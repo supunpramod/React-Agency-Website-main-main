@@ -19,13 +19,13 @@ const Blog = () => {
                 <p className=' text-sm text-neutralGrey mb-8 md:w-3/4 mx-auto'>The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
             </div>
             {/* all blogs */}
-            <div>
+            <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 items-center justify-between">
                 {
-                    blog.map(blog=><div key={blog.id}>
-                        <img src={blog.image} alt=""/>
-                        <div>
-                            <h3>{blog.title}</h3>
-                            <p>Read more</p>
+                    blog.map(blog=><div key={blog.id} className="mx-auto relative mb-12 cursor-pointer" >
+                        <img src={blog.image} alt="" className="hover:scale-95 transition-all duration-300  "/>
+                        <div className="text-center px-4 py-8 bg-white shadow-lg rounded-md md:w-3/4 mx-auto absolute left-0 right-0 -bottom-12 ">
+                            <h3 className="mb-3 text-neutralGrey font-semibold">{blog.title}</h3>
+                             <a href='/' className='font-bold text-brandPrimary hover:text-neutral-700'>Read more</a>
                         </div>
                     </div>)
                 }
