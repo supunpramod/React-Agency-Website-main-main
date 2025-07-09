@@ -9,6 +9,7 @@ import About from './components/About.jsx'
 import Product from './components/Product.jsx'
 import Blog from './components/Blog.jsx'
 import Newsletter from './components/Newsletter.jsx'
+import MyFooter from './components/MyFooter.jsx'
 
 
 
@@ -27,6 +28,7 @@ function App() {
     <Product/>
     <Blog/>
     <Newsletter/>
+    <MyFooter/>
    
     </>
   )

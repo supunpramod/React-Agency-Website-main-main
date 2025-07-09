@@ -52,7 +52,7 @@ const Navbar = () => {
                   smooth={true}
                   offset={-100}
                   duration={500}
-                  className="block text-base text-gray-900 hover:text-brandPrimary first:font-medium"
+                  className="block text-base text-gray-900 hover:text-brandPrimary first:font-medium cursor-pointer"
                 >
                   {link}
                 </Link>
